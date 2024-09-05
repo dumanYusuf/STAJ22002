@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewPerson"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/person" />
+
+            <TextView
+                android:id="@+id/textViewKullanicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="44dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/imageViewPerson"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="14dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/imageViewPerson"
+                app:layout_constraintTop_toBottomOf="@+id/textViewKullanicName" />
+
+            <TextView
+                android:id="@+id/textViewSepeteGit"
+                android:layout_width="288dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="57dp"
+                android:text="Sepet"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewPerson" />
+
+            <TextView
+                android:id="@+id/textViewFavoriGit"
+                android:layout_width="288dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="Favori"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSepeteGit" />
+
+            <ImageView
+                android:id="@+id/imageViewSepetGit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="188dp"
+                app:layout_constraintStart_toEndOf="@+id/textViewSepeteGit"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/next" />
+
+            <ImageView
+                android:id="@+id/imageViewFavoriGit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toEndOf="@+id/textViewFavoriGit"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewSepetGit"
+                app:srcCompat="@drawable/next" />
+
+            <TextView
+                android:id="@+id/textViewKategoriGit"
+                android:layout_width="288dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="Kategoriler"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFavoriGit" />
+
+            <ImageView
+                android:id="@+id/imageViewKategorilerGitt"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toEndOf="@+id/textViewKategoriGit"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFavoriGit"
+                app:srcCompat="@drawable/next" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="208dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="Dark Mod"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewKategoriGit" />
+
+            <Switch
+                android:id="@+id/switchDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="36dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewKategorilerGitt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
